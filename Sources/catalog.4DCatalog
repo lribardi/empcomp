@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="" uuid="D74395B8203FCE4FB8BA264D3AEA52D2" collation_locale="fr">
+	<table name="Employee" uuid="F15D1534FFAAE2478D838538CCB1462A" id="1">
+		<field name="ID" uuid="7C118986D7F05F428CE638A3D5ADD9FF" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<primary_key field_name="ID" field_uuid="7C118986D7F05F428CE638A3D5ADD9FF"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="106" top="189" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="201D68B1A1BD4148BC09068B2AA13902" type="7">
+		<field_ref uuid="7C118986D7F05F428CE638A3D5ADD9FF" name="ID">
+			<table_ref uuid="F15D1534FFAAE2478D838538CCB1462A" name="Employee"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
