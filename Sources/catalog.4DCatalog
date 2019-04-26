@@ -3,9 +3,11 @@
 <base name="" uuid="D74395B8203FCE4FB8BA264D3AEA52D2" collation_locale="fr">
 	<table name="Employee" uuid="F15D1534FFAAE2478D838538CCB1462A" id="1">
 		<field name="ID" uuid="7C118986D7F05F428CE638A3D5ADD9FF" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="firstname" uuid="4BD9EC71570008468AB7450EA1E033E9" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="lastname" uuid="05195122F390DA449C0303AE1FC496E7" type="10" limiting_length="255" never_null="true" id="3"/>
 		<primary_key field_name="ID" field_uuid="7C118986D7F05F428CE638A3D5ADD9FF"/>
 		<table_extra>
-			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+			<editor_table_info displayable_fields_count="6">
 				<color red="255" green="255" blue="255" alpha="0"/>
 				<coordinates left="106" top="189" width="120" height="167.33203125"/>
 			</editor_table_info>
@@ -16,7 +18,17 @@
 			<table_ref uuid="F15D1534FFAAE2478D838538CCB1462A" name="Employee"/>
 		</field_ref>
 	</index>
-	<base_extra>
+	<index kind="regular" uuid="5A184D1DC52D4844BBD4E538A6D875FA" type="7">
+		<field_ref uuid="4BD9EC71570008468AB7450EA1E033E9" name="firstname">
+			<table_ref uuid="F15D1534FFAAE2478D838538CCB1462A" name="Employee"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="CF2B76D7C74DA04D8965AF3D1DED1087" type="7">
+		<field_ref uuid="05195122F390DA449C0303AE1FC496E7" name="lastname">
+			<table_ref uuid="F15D1534FFAAE2478D838538CCB1462A" name="Employee"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0">
 		<journal_file journal_file_enabled="true"/>
 	</base_extra>
 </base>
